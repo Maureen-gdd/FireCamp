@@ -1,0 +1,384 @@
+html, body 
+{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #1a1a1a;
+}
+
+.shadow
+{
+    position: relative;
+    bottom: 70vh;
+    left: 7vh;
+    width: 10vw;
+    height: 10vh;
+}
+
+.feu
+{
+    position: absolute;
+    top: 60vh;
+    left: 50vw;
+    z-index: 1;
+}
+
+.rouge
+{
+    background-color: #d92209;
+    border-radius: 5vh;
+    box-shadow:  
+        0 0 50px 20px rgba(215,28,7,0.6),
+        0 0 20px 5px rgba(254,232,195,0.4);
+}
+
+.orange
+{
+    background-color: #fb9c20;
+    border-radius: 5vh;
+    box-shadow:  
+        0 0 30px 10px rgba(251,156,30,0.6),
+        0 0 10px 5px rgba(254,232,195,0.4);
+
+}
+
+.blanche
+{
+    background-color: #feeecd;
+    border-radius: 5vh;
+    box-shadow:  0 0 20px 5px rgba(254,232,195,0.8);
+}
+
+.flamme
+{
+    width: 4.85vh;
+    transform-origin: bottom;
+}
+
+/*** ******************************FLAMME ROUGE****************************** ***/
+.flamme-rouge
+{
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    bottom: 13vh;
+    z-index: 0;
+}
+
+.flamme-rouge .une
+{
+    height: 16vh;
+    animation: fire 2s 0.15s ease-in-out infinite alternate
+}
+
+.flamme-rouge .deux
+{
+    height: 22vh;
+    animation: fire 2s 0.35s ease-in-out infinite alternate
+}
+
+.flamme-rouge .trois
+{
+    height: 24vh;
+    animation: fire 2s 0.1s ease-in-out infinite alternate
+}
+
+.flamme-rouge .quatre
+{
+    height: 30vh;
+    animation: fire 2s 0s ease-in-out infinite alternate
+}
+
+.flamme-rouge .cinq
+{
+    height: 27vh;
+    animation: fire 2s 0.45s ease-in-out infinite alternate
+}
+
+.flamme-rouge .six
+{
+    height: 20vh;
+    animation: fire 2s 0.3s ease-in-out infinite alternate
+}
+
+.flamme-rouge .sept
+{
+    height: 14vh;
+    animation: fire 2s 0.1s ease-in-out infinite alternate
+}
+
+/*** ******************************FLAMME ORANGE****************************** ***/
+.flamme-orange
+{
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    bottom: 38vh;
+}
+
+.flamme-orange .une
+{
+    height: 11vh;
+    animation: fire 2s 0.05s ease-in-out infinite alternate
+}
+
+.flamme-orange .deux
+{
+    height: 17vh;
+    animation: fire 2s 0.1s ease-in-out infinite alternate
+}
+
+.flamme-orange .trois
+{
+    height: 19vh;
+    animation: fire 2s 0.35s ease-in-out infinite alternate
+}
+
+.flamme-orange .quatre
+{
+    height: 25vh;
+    animation: fire 2s 0.4s ease-in-out infinite alternate
+}
+
+.flamme-orange .cinq
+{
+    height: 22vh;
+    animation: fire 2s 0.5s ease-in-out infinite alternate
+}
+
+.flamme-orange .six
+{
+    height: 15vh;
+    animation: fire 2s 0.35s ease-in-out infinite alternate
+}
+
+.flamme-orange .sept
+{
+    height: 9vh;
+    animation: fire 2s 0.1s ease-in-out infinite alternate
+}
+
+/*** ******************************FLAMME BLANCHE****************************** ***/
+.flamme-blanche
+{
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    bottom: 60vh;
+    left: 5vh;
+    /*box-shadow: 0 0 80px 18px rgba(254,232,194,0.4);*/
+}
+
+.flamme-blanche .deux
+{
+    height: 14vh;
+    animation: fire 2s 0.4s ease-in-out infinite alternate
+}
+
+.flamme-blanche .trois
+{
+    height: 16vh;
+    animation: fire 2s 0.38s ease-in-out infinite alternate
+}
+
+.flamme-blanche .quatre
+{
+    height: 22vh;
+    animation: fire 2s 0.22s ease-in-out infinite alternate
+}
+
+.flamme-blanche .cinq
+{
+    height: 19vh;
+    animation: fire 2s 0.18s ease-in-out infinite alternate
+}
+
+.flamme-blanche .six
+{
+    height: 12vh;
+    animation: fire 2s 0.35s ease-in-out infinite alternate
+}
+
+/*** ******************************SPARK****************************** ***/
+.sparks
+{
+    display: flex;
+    position: relative;
+    bottom: 72vh;
+
+}
+
+.spark
+{
+    width: 0.4vw;
+    height: 2.5vh;
+    border-radius: 1vh;
+    background-color: white;
+    margin-right: 3vw;
+    left: 2vh;
+    opacity: 0.6;
+}
+
+.spark-une
+{
+    position: relative;
+    bottom: -5vh;
+    animation: spark 1s 1s linear infinite;
+}
+.spark-deux
+{
+    position: relative;
+    bottom: 6vh;
+    animation: spark 1s 2s linear infinite;
+}
+.spark-trois
+{
+    position: relative;
+    bottom: 2.5vh;
+    animation: spark 1s 0.6s linear infinite;
+}
+.spark-quatre
+{
+    position: relative;
+    bottom: 7vh;
+    animation: spark 1s 1.2s linear infinite;
+}
+.spark-cinq
+{
+    position: relative;
+    bottom: -3vh;
+    animation: spark 1s 0.3s linear infinite;
+}
+
+.buches
+{
+    position: absolute;
+    width: 17vw;
+    height: auto;
+    z-index: 3;
+}
+
+.sol
+{
+    background-color: #373972;
+    width: 100%;
+    height: 43vh;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+.ciel
+{
+    background-color: #232854;
+    width: 100%;
+    height: 57vh;
+    position: absolute;
+    z-index: 0;
+}
+
+.tente
+{
+    margin-left: 3vh;
+    position: absolute;
+    top: 20vh;
+}
+
+.toile
+{
+    width: 80vh;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+}
+
+.porte
+{
+    width: 10vh;
+    height: auto;
+    position: absolute;
+    top: 15vh;
+    left: 62vh;
+    z-index: 4;
+    animation: light 2s 0.15s ease-in-out infinite alternate
+}
+
+.sapin
+{
+    position: absolute;
+    left: 70vh;
+    top: 16vh;
+    z-index: 3;
+}
+
+.sapin_ombre
+{
+    position: absolute;
+    left: 70.05vh;
+    top: 15.6vh;
+    z-index: 2;
+    animation: light 2s 0.15s ease-in-out infinite alternate
+}
+
+.moon 
+{
+    position: absolute;
+    left: 150vh;
+    top: 5vh;
+  width: 100px ;
+  height: 100px ;
+  background-color: transparent ; 
+  box-shadow: inset 30px -30px #cfcbe7 ;
+  border-radius: 100px ;
+  z-index: 32;
+  animation: moon 3s ease-in-out infinite alternate
+}
+
+/*** ******************************ANIMATION****************************** ***/
+@keyframes fire
+{
+  0% {transform: scaleY(1);}
+  28% {transform: scaleY(0.7);}
+  38% {transform: scaleY(0.8);}
+  50% {transform: scaleY(0.6);}
+  70% {transform: scaleY(0.95);}
+  82% {transform: scaleY(0.58);}
+  100% {transform: scaleY(1);}
+}
+
+@keyframes spark
+{
+    0% 
+    35% {
+        transform: scaleY(0) translateY(0); 
+        opacity: 0;}
+    50% {
+        transform: scaleY(1) translateY(0);
+        opacity: 1;}
+    70% {
+        transform: scaleY(1) translateY(-20px);
+        opacity: 1;}
+    75% {
+        transform: scaleY(1) translateY(-20px);
+        opacity: 0;}
+    100% {
+        transform: scaleY(0) translateY(0);
+        opacity: 0;}
+}
+
+@keyframes light
+{
+  0% {filter: opacity(1) drop-shadow(0 0 0 #fb9c20);}
+  28% {filter: opacity(0.7);}
+  38% {filter: opacity(0.8);}
+  50% {filter: opacity(0.6) drop-shadow(0 0 0 #fb9c20);}
+  70% {filter: opacity(0.95);}
+  82% {filter: opacity(0.58);}
+  100% {filter: opacity(1) drop-shadow(0 0 0 #fb9c20);}
+}
+
+@keyframes moon
+{
+    0% {transform: translateY(-10px);}
+    100% {transform: translateY(20px);}
+}
